@@ -11,7 +11,24 @@ Practice Project of IOT to be done under supervision of Robotics Lab UIET
     3. Google Scripts
     4. LCD 
     5. Any Device for Programming NodeMCU
+    6. USB Cable for NodeMCU
 
+
+!!Project Starting Date
+    24/06/19
+        
+        
+!!Project Deadline
+    15/07/19
+    
+    
+!!Project TimeLine
+             ~Week 1 [24/06/19 to 30/06/19]~
+To Learn Basics and Intermediate Level of Google Script and try out basic Interfacing Projects using NodeMCU and Google Script.  
+             ~Week 2 [01/07/19 to 07/07/19]~ 
+To Implement the learned Knowledge of Google Script and apply it to get the Data from a weather forcast data site to an Email Address and SMS and also stroe the data in our local server of NodeMCU.            
+            ~Week 3 [08/07/19 to 14/07/19]~
+To implement the data delivery on Email and SMS at given time of the day and Display the data to an LCD attached to our NodeMCU.            
 
 
     
