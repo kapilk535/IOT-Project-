@@ -30,5 +30,9 @@ To get weather forcast data and send to users on E-Mail and SMS and also add dat
 - **Week 3 [08/07/19 to 14/07/19]**
     To implement the data delivery on Email and SMS at given time of the day and Display the data to an LCD attached to our NodeMCU.            
 
-
+##Project Progress
+- **Till date 02/07/19**
+    Learned about Google script and it's basic coding to get data in sheets.
+    Also working on API to use for weather forecast data (Using OpenWeather)
+    Will Try publishing it's data to Google Sheets using NodeMCU and will upload code soon.
     
