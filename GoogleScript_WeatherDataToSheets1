@@ -1,0 +1,43 @@
+function myFunction() {
+     var url="http://api.openweathermap.org/data/2.5/weather?lat=30.73&lon=76.79&appid=0fdd3c590302c024c1ee1c6869a78fb1";
+     var response= UrlFetchApp.fetch(url);
+     var json=response.getContentText();
+     var data= JSON.parse(json);
+     Logger.log(data.main.temp);
+     return data.main.temp;
+}
+//http://api.openweathermap.org/data/2.5/weather?lat=30.73&lon=76.79&appid=0fdd3c590302c024c1ee1c6869a78fb1
+//http://api.openweathermap.org/data/2.5/forecast?lat=30.73&lon=76.79&appid=0fdd3c590302c024c1ee1c6869a78fb1
+function CurrentTemp(lat,lon) {
+     var url1="http://api.openweathermap.org/data/2.5/weather?lat=";
+     var url2="&appid=0fdd3c590302c024c1ee1c6869a78fb1";
+     var url = url1 + lat + "&lon=" + lon + url2;
+     var response= UrlFetchApp.fetch(url);
+     var json=response.getContentText();
+     var data= JSON.parse(json);
+     Logger.log(data.main.temp);
+     return data.main.temp;
+}
+
+function myForcast() {
+     var url="http://api.openweathermap.org/data/2.5/forecast?lat=30.73&lon=76.79&appid=0fdd3c590302c024c1ee1c6869a78fb1";
+     var response= UrlFetchApp.fetch(url);
+     var json=response.getContentText();
+     var data= JSON.parse(json);
+     Logger.log(data.list[8].weather[0].description);
+     return data.list[8].weather[0].description;
+}
+
+function Forcast(lat,lon) {
+     var url1="http://api.openweathermap.org/data/2.5/forcast?lat=";
+     var url2="&appid=0fdd3c590302c024c1ee1c6869a78fb1";
+     var url = url1 + 30 + "&lon=" + 76 + url2;
+     var response= UrlFetchApp.fetch(url);
+     var json=response.getContentText();
+     var data= JSON.parse(json);
+     Logger.log(data);
+     return data;
+}
+function New() {
+  return 0;
+}
