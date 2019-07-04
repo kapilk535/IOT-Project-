@@ -35,5 +35,6 @@ To get weather forcast data and send to users on E-Mail and SMS and also add dat
     Learned about Google script and it's basic coding to get data in sheets.
     Also working on API to use for weather forecast data (Using OpenWeather)
     Will Try publishing it's data to Google Sheets using NodeMCU and will upload code soon.
-
+- **Till date 04/07/19**
+    Sent Weather Data using Google Sheets and Script to Any Email.Code Also Uploaded.
     
