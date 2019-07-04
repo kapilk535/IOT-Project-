@@ -41,3 +41,27 @@ function Forcast(lat,lon) {
 function New() {
   return 0;
 }
+
+/**
+ * Sends emails Function Ahead.
+ */
+function SendEmail() {
+  var sheet = SpreadsheetApp.getActiveSheet();
+  var startRow = 2; // First row of data to process
+  var numRows = 1; // Number of rows to process
+  // Fetch the range of cells A2:C3
+  var dataRange = sheet.getRange(startRow, 1, numRows, 3);
+  // Fetch values for each row in the Range.
+  
+  var data = dataRange.getValues();
+  for (i in data) {
+    var row = data[i];
+    var emailAddress = row[0]; // First column
+    var message = row[2]; // Third column
+    var message1 = message.toFixed(2);
+    var message_1 = "Today Avg Temp in Chandigarh = "+ message1 + " Degree Celcius" ; 
+    var subject = 'Email send from Google Sheets Using Google Script.';
+    Logger.log(message1);
+    MailApp.sendEmail(emailAddress, subject, message_1);
+  }
+}
