@@ -28,10 +28,32 @@ function myForcast() {
      return data.list[8].weather[0].description;
 }
 
-function Forcast(lat,lon) {
-     var url1="http://api.openweathermap.org/data/2.5/forcast?lat=";
+function CurrentWeather(lat,lon) {
+     var url1="http://api.openweathermap.org/data/2.5/weather?lat=";
      var url2="&appid=0fdd3c590302c024c1ee1c6869a78fb1";
-     var url = url1 + 30 + "&lon=" + 76 + url2;
+     var url = url1 + lat + "&lon=" + lon + url2;
+     var response= UrlFetchApp.fetch(url);
+     var json=response.getContentText();
+     var data= JSON.parse(json);
+     Logger.log(data.weather[0].description);
+     return data.weather[0].description;
+}
+
+function CurrentCity(lat,lon) {
+     var url1="http://api.openweathermap.org/data/2.5/weather?lat=";
+     var url2="&appid=0fdd3c590302c024c1ee1c6869a78fb1";
+     var url = url1 + lat + "&lon=" + lon + url2;
+     var response= UrlFetchApp.fetch(url);
+     var json=response.getContentText();
+     var data= JSON.parse(json);
+     Logger.log(data.name);
+     return data.name;
+}
+
+function Forcast(lat,lon) {
+     var url1="http://api.openweathermap.org/data/2.5/forecast?lat=";
+     var url2="&appid=0fdd3c590302c024c1ee1c6869a78fb1";
+     var url = url1 + lat + "&lon=" + lon + url2;
      var response= UrlFetchApp.fetch(url);
      var json=response.getContentText();
      var data= JSON.parse(json);
