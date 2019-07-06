@@ -37,4 +37,5 @@ To get weather forcast data and send to users on E-Mail and SMS and also add dat
     Will Try publishing it's data to Google Sheets using NodeMCU and will upload code soon.
 - **Till date 04/07/19**
     Sent Weather Data using Google Sheets and Script to Any Email.Code Also Uploaded.
-    
+- **Till date 06/07/19**
+    Made NodeMCU Code for working it as a internet data Weather Station.    
