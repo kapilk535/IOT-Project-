@@ -94,7 +94,7 @@ function Connect()
   var numRows = 1;
   var dataRange = sheet.getRange(startRow, 1, numRows, 7); 
   var data = dataRange.getValues();
-  Logger.log(data);
+  //Logger.log(data);
   for (i in data) {
     var row = data[i];
     var Status = row[6]; 
