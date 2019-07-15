@@ -1,16 +1,16 @@
 function myFunction() {
-     var url="http://api.openweathermap.org/data/2.5/weather?lat=30.73&lon=76.79&appid=0fdd3c590302c024c1ee1c6869a78fb1";
+     var url="http://api.openweathermap.org/data/2.5/weather?lat=30.73&lon=76.79&appid=//////API_KEY//////////////";
      var response= UrlFetchApp.fetch(url);
      var json=response.getContentText();
      var data= JSON.parse(json);
      //Logger.log(data.main.temp);
      return data.main.temp;
 }
-//http://api.openweathermap.org/data/2.5/weather?lat=30.73&lon=76.79&appid=0fdd3c590302c024c1ee1c6869a78fb1
-//http://api.openweathermap.org/data/2.5/forecast?lat=30.73&lon=76.79&appid=0fdd3c590302c024c1ee1c6869a78fb1
+//http://api.openweathermap.org/data/2.5/weather?lat=30.73&lon=76.79&appid=//////API_KEY//////////////
+//http://api.openweathermap.org/data/2.5/forecast?lat=30.73&lon=76.79&appid=//////API_KEY//////////////
 function CurrentTemp(lat,lon) {
      var url1="http://api.openweathermap.org/data/2.5/weather?lat=";
-     var url2="&appid=0fdd3c590302c024c1ee1c6869a78fb1";
+     var url2="&appid=//////API_KEY//////////////";
      var url = url1 + lat + "&lon=" + lon + url2;
      var response= UrlFetchApp.fetch(url);
      var json=response.getContentText();
@@ -20,7 +20,7 @@ function CurrentTemp(lat,lon) {
 }
 
 function myForcast() {
-     var url="http://api.openweathermap.org/data/2.5/forecast?lat=30.73&lon=76.79&appid=0fdd3c590302c024c1ee1c6869a78fb1";
+     var url="http://api.openweathermap.org/data/2.5/forecast?lat=30.73&lon=76.79&appid=//////API_KEY//////////////";
      var response= UrlFetchApp.fetch(url);
      var json=response.getContentText();
      var data= JSON.parse(json);
@@ -30,7 +30,7 @@ function myForcast() {
 
 function CurrentWeather(lat,lon) {
      var url1="http://api.openweathermap.org/data/2.5/weather?lat=";
-     var url2="&appid=0fdd3c590302c024c1ee1c6869a78fb1";
+     var url2="&appid=//////API_KEY//////////////";
      var url = url1 + lat + "&lon=" + lon + url2;
      var response= UrlFetchApp.fetch(url);
      var json=response.getContentText();
@@ -41,7 +41,7 @@ function CurrentWeather(lat,lon) {
 
 function CurrentCity(lat,lon) {
      var url1="http://api.openweathermap.org/data/2.5/weather?lat=";
-     var url2="&appid=0fdd3c590302c024c1ee1c6869a78fb1";
+     var url2="&appid=//////API_KEY//////////////";
      var url = url1 + lat + "&lon=" + lon + url2;
      var response= UrlFetchApp.fetch(url);
      var json=response.getContentText();
@@ -52,7 +52,7 @@ function CurrentCity(lat,lon) {
 
 function Forcast(lat,lon) {
      var url1="http://api.openweathermap.org/data/2.5/forecast?lat=";
-     var url2="&appid=0fdd3c590302c024c1ee1c6869a78fb1";
+     var url2="&appid=//////API_KEY//////////////";
      var url = url1 + lat + "&lon=" + lon + url2;
      var response= UrlFetchApp.fetch(url);
      var json=response.getContentText();
