@@ -24,7 +24,7 @@ function myForcast() {
      var response= UrlFetchApp.fetch(url);
      var json=response.getContentText();
      var data= JSON.parse(json);
-     Logger.log(data.list[8].weather[0].description);
+     //Logger.log(data.list[8].weather[0].description);
      return data.list[8].weather[0].description;
 }
 
