@@ -3,7 +3,7 @@ function myFunction() {
      var response= UrlFetchApp.fetch(url);
      var json=response.getContentText();
      var data= JSON.parse(json);
-     Logger.log(data.main.temp);
+     //Logger.log(data.main.temp);
      return data.main.temp;
 }
 //http://api.openweathermap.org/data/2.5/weather?lat=30.73&lon=76.79&appid=0fdd3c590302c024c1ee1c6869a78fb1
