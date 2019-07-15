@@ -35,7 +35,7 @@ function CurrentWeather(lat,lon) {
      var response= UrlFetchApp.fetch(url);
      var json=response.getContentText();
      var data= JSON.parse(json);
-     Logger.log(data.weather[0].description);
+     //Logger.log(data.weather[0].description);
      return data.weather[0].description;
 }
 
