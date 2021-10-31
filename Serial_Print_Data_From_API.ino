@@ -12,7 +12,7 @@ String API_Key  = "API Key from OpenWeather";///////////////////////////////////
  
 void setup(void)
 {
-  Serial.begin(9600);
+  Serial.begin(9600); //  Intializing Serial Monitor 
   delay(1000);
  
   WiFi.begin(ssid, password);
